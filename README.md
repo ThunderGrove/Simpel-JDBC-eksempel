@@ -1,5 +1,9 @@
-# Simpel JDBC eksempel
-Eksemplet viser, hvordan vi kan tilgå en database fra Java.
+# Simpelt eksempel på MySQL i Java vha. JDBC
+Eksemplet viser, hvordan vi kan tilgå en MySQL-database fra Java.
 
-Husk, at du skal bruge en "external libarary" fra producenten, for at kunne connecte til MySQL. Find den på nedenstående link, og tilføj filen som Library under Project Structure.  
-[https://dev.mysql.com/downloads/connector/j/](https://dev.mysql.com/downloads/connector/j/)
+## Forudsætninger
+1. Du skal have en MySQL-server, der kører.
+2. Serveren skal have *world* databasen installeret.  
+3. Du skal bruge en "external libarary" med navnet [Connector/J](https://dev.mysql.com/downloads/connector/j/) fra MySQL, for at kunne connecte til MySQL.
+4. Tilføj Connector/J som Library under Project Structure. OBS: Du skal ikke uploade denne fil på GitHUB! (Dvs. den skal måske sættes i .gitignore)
+

@@ -1,15 +1,15 @@
 import java.sql.*;
 
-public class SimpleJdbcBASIC {
+public class    SimpleJdbcBASIC {
     public static void main(String[] args) throws SQLException {
 
-        // #1. Connect to the database
-        Connection connection = null;
-        connection = DriverManager.getConnection(
-                "jdbc:mysql://localhost/world?serverTimezone=UTC",
-                "root",
-                "CodeWarrior8"
-        );
+            // #1. Connect to the database
+            Connection connection = null;
+            connection = DriverManager.getConnection(
+                    "jdbc:mysql://localhost/world?serverTimezone=UTC",
+                    "root",
+                    "CodeWarrior8"
+            );
 
         // #2. Create a statement / query / forespørgsel
         String mitQuery = "SELECT * FROM world.country WHERE name LIKE 'D%';";
@@ -19,7 +19,7 @@ public class SimpleJdbcBASIC {
         ResultSet resultSet = statement.executeQuery
                 (mitQuery);
 
-        // #4. Iterate through the result and print the results (vi har måske flere resultater end 1, derfor vil en løkke læse alle rækker ud fra resultSettet)
+        // #4. Iterate through the results and print the results (vi har måske flere resultater end 1, derfor vil en løkke læse alle rækker ud fra resultSettet)
             while (resultSet.next())
             System.out.println(resultSet.getString(1) + " " +
                     resultSet.getString(2) + ", " +

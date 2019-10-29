@@ -57,7 +57,7 @@ import java.sql.*;
  */
 
 
-public class CitiesAndLangauges extends Application {
+public class CitiesAndLangaugesGUI extends Application {
 
     // Statement for executing queries
     private Statement stmt;

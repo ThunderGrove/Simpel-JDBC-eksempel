@@ -9,6 +9,48 @@ import javafx.stage.Stage;
 
 import java.sql.*;
 
+/**
+ *           #                          #######  #     #              #     #
+ *           #    ##    #    #    ##    #         #   #               ##   ##    ##     ####   #   ####
+ *           #   #  #   #    #   #  #   #          # #                # # # #   #  #   #    #  #  #    #
+ *           #  #    #  #    #  #    #  #####       #                 #  #  #  #    #  #       #  #
+ *     #     #  ######  #    #  ######  #          # #                #     #  ######  #  ###  #  #
+ *     #     #  #    #   #  #   #    #  #         #   #               #     #  #    #  #    #  #  #    #
+ *      #####   #    #    ##    #    #  #        #     #              #     #  #    #   ####   #   ####
+ *
+ *     For at få JavaFX kode til at virke, skal du sikre dig følgende:
+ *
+ * (0) Download JavaFX SDK herfra: https://gluonhq.com/products/javafx/
+ *
+ * (1) Udpak filen i en ny mappe, f.eks. IdeaProjects/_external_libraries/ (IdeaProjects kan du finde i din brugermappe,
+ *     og den indeholder alle dine javaprojekter, og heri kan du lave denne _external_libraries undermappe.)
+ *
+ * (2) Gå ind på File -> Project Structure -> Project og sæt project SDK til 11, og language level til 11.
+ *
+ * (3) Gå ind på  File -> Project Structure -> Libraries og tilføj JavaFX 11 SDK som en library, ved at vælge lib mappen
+ *     af den JavaFX SDK, som du har gemt i IdeaProjects/_external_libraries/.
+ *
+ *     Nu kan Java genkende dine JavaFX klasser, og røde linjer forsvinder fra f.eks. Application eller Parent,
+ *     men du får stadig bøvl, når du prøver at køre programmet. Derfor skal du sætte VM options:
+ *
+ * (4) Klik på Run -> Edit Configurations... og tilføj disse VM options:
+ *
+ *     HVIS DU HAR LINUX / MAC, SKRIV:
+ *     --module-path /din/path/til/javafx-sdk-11/lib --add-modules javafx.controls,javafx.fxml
+ *
+ *     HVIS DU HAR PC, SKRIV:
+ *     --module-path "\sti\til\din\javafx-sdk-13\lib" --add-modules javafx.controls,javafx.fxml
+ *
+ * (5) Nu kan du køre projektet, ved at klikke Run -> Run...
+ *
+ * (6) Hvis du får en SQL JDBC fejl, så skal du sikre dig, at JDBC-connectoren er også tilføjet til dit projekt som
+ *     external library. Du kan downloade herfra: https://dev.mysql.com/downloads/connector/j/
+ *     Det er en god idé at gemme den udpakkede fil i samme _external_libraries mappe som under punkt (1).
+ *
+ *  Se skærmbilleder for denne vejledning på den gældende JavaFX manual på:
+ *  https://openjfx.io/openjfx-docs/#install-javafx --> JavaFX and IntelliJ --> Non-modular from IDE
+ *
+ */
 public class FindGrade extends Application {
 
   // Statement for executing queries

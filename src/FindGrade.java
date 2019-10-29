@@ -117,7 +117,7 @@ public class FindGrade extends Application {
 
 
         // Display result in a label
-        lblResult.setText( " There are  " + grade + "% of the citizens in  " +
+        lblResult.setText( grade + "% of the citizens in  " +
           lastName + " who speaks " + mi + ".");
       } else {
         lblResult.setText("City and/or language not found.");

@@ -1,10 +1,10 @@
 # Simple eksempler på MySQL i Java vha. JDBC
 *Kodeeksemplerne er baseret på eksemplerne i Liangs bog.*
 
-- **SimpleJdbcBASIC.java** viser den enkelste opskrift på, hvordan vi kan tilgå en MySQL-database fra Java.
-- **SimpleJdbc.java** viser et lille program, som kan finde population i de forskellige lande. 
-- **CitiesAndLangaugesGUI.java** viser, hvordan man kan lave et simpelt GUI for databaser
-- **DB_Settings.java** viser, hvordan du kan undgå at sende dit SQL-kodeord op på GitHub.
+- **[SimpleJdbcBASIC.java](https://github.com/andracs/Simpel-JDBC-eksempel/blob/master/src/SimpleJdbcBASIC.java)** viser den enkelste opskrift på, hvordan vi kan tilgå en MySQL-database fra Java.
+- **[SimpleJdbc.java](https://github.com/andracs/Simpel-JDBC-eksempel/blob/master/src/SimpleJdbc.java)** viser et lille program, som kan finde population i de forskellige lande. 
+- **[CitiesAndLangaugesGUI.java](https://github.com/andracs/Simpel-JDBC-eksempel/blob/master/src/CitiesAndLangaugesGUI.java)** viser, hvordan man kan lave et simpelt GUI for databaser
+- **[DB_Settings.java](https://github.com/andracs/Simpel-JDBC-eksempel/blob/master/src/DB_Settings.java)** viser, hvordan du kan undgå at sende dit SQL-kodeord op på GitHub.
 
 
 ## Forudsætninger

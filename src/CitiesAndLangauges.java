@@ -50,13 +50,14 @@ import java.sql.*;
  * (6) Hvis du får en SQL JDBC fejl, så skal du sikre dig, at JDBC-connectoren er også tilføjet til dit projekt som
  * external library. Du kan downloade herfra: https://dev.mysql.com/downloads/connector/j/
  * Det er en god idé at gemme den udpakkede fil i samme _external_libraries mappe som under punkt (1).
+ * Du skal også sikre dig, at du har world databasen installeret, og din MySQL kører.
  * 
  * Se skærmbilleder for denne vejledning på den gældende JavaFX manual på:
  * https://openjfx.io/openjfx-docs/#install-javafx --> JavaFX and IntelliJ --> Non-modular from IDE
  */
 
 
-public class FindGrade extends Application {
+public class CitiesAndLangauges extends Application {
 
     // Statement for executing queries
     private Statement stmt;
@@ -124,7 +125,6 @@ public class FindGrade extends Application {
             String cityName = resultSet.getString("city.name");
             String countryLanguage = resultSet.getString("countrylanguage.Language");
             String percentage = resultSet.getString("Percentage");
-
 
             // Display result in a label
             resultLabel.setText("     " + percentage + "% of the citizens in " +

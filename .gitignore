@@ -1,2 +1,5 @@
 # Project exclude paths
 /out/
+
+# Husk at ekskludere databasens kodeord, ved at slette hashtag i næste linje
+# /src/DB_Settings.java

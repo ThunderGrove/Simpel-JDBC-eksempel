@@ -10,11 +10,11 @@
 public class DB_Settings {
 
     public static String getPassword(){
-        return "CodeWarrior8";
+        return "";
     }
 
     public static String geUsername(){
-        return "root";
+        return "";
     }
 }
 

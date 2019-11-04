@@ -56,8 +56,7 @@ import java.sql.*;
  * https://openjfx.io/openjfx-docs/#install-javafx --> JavaFX and IntelliJ --> Non-modular from IDE
  */
 
-
-public class CitiesAndLangaugesGUI extends Application {
+public class CitiesAndLangaugesGUI extends Application{
 
     // Statement for executing queries
     private Statement stmt;
@@ -66,7 +65,8 @@ public class CitiesAndLangaugesGUI extends Application {
     private Label resultLabel = new Label();
 
     @Override // Override the start method in the Application class
-    public void start(Stage primaryStage) throws SQLException {
+    public void start(Stage primaryStage) throws SQLException, ClassNotFoundException {
+        Class.forName("org.mariadb.jdbc.Driver");//NOTE: The driver has to be added as a lib.
         // Initialize database connection and create a Statement object
         initializeDB();
 
@@ -95,7 +95,8 @@ public class CitiesAndLangaugesGUI extends Application {
         primaryStage.show(); // Display the stage
     }
 
-    private void initializeDB() throws SQLException {
+    private void initializeDB() throws SQLException, ClassNotFoundException {
+        Class.forName("org.mariadb.jdbc.Driver");//NOTE: The driver has to be added as a lib.
         // Establish a connection
         String password = DB_Settings.getPassword();
         String username = DB_Settings.geUsername();

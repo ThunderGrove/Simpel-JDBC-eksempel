@@ -1,16 +1,16 @@
 <component name="libraryTable">
   <library name="lib">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/../_external_libraries/javafx-sdk-11.0.2/lib" />
+      <root url="jar:///usr/lib/jvm/java-11-openjdk/lib/javafx-swt.jar!/" />
+      <root url="jar:///usr/lib/jvm/java-11-openjdk/lib/javafx.base.jar!/" />
+      <root url="jar:///usr/lib/jvm/java-11-openjdk/lib/javafx.controls.jar!/" />
+      <root url="jar:///usr/lib/jvm/java-11-openjdk/lib/javafx.fxml.jar!/" />
+      <root url="jar:///usr/lib/jvm/java-11-openjdk/lib/javafx.graphics.jar!/" />
+      <root url="jar:///usr/lib/jvm/java-11-openjdk/lib/javafx.media.jar!/" />
+      <root url="jar:///usr/lib/jvm/java-11-openjdk/lib/javafx.swing.jar!/" />
+      <root url="jar:///usr/lib/jvm/java-11-openjdk/lib/javafx.web.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <NATIVE>
-      <root url="file://$PROJECT_DIR$/../_external_libraries/javafx-sdk-11.0.2/lib" />
-    </NATIVE>
-    <SOURCES>
-      <root url="file://$PROJECT_DIR$/../_external_libraries/javafx-sdk-11.0.2/lib" />
-    </SOURCES>
-    <jarDirectory url="file://$PROJECT_DIR$/../_external_libraries/javafx-sdk-11.0.2/lib" recursive="false" />
-    <jarDirectory url="file://$PROJECT_DIR$/../_external_libraries/javafx-sdk-11.0.2/lib" recursive="false" type="SOURCES" />
+    <SOURCES />
   </library>
 </component>
